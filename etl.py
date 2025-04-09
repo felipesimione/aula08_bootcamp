@@ -34,5 +34,5 @@ class PipelineCalculator:
         extractor = ExtractDataframe()
         data_frame = extractor.extrair_dados_e_consolidar(pasta_argumento)
         etl = EtlCalculator(data_frame)
-        data_frame_calculado = etl.calcular_kpi_total_vendas()
+        etl.calcular_kpi_total_vendas()
         etl.carregar_dados(formato_de_saida)
