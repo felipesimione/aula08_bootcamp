@@ -1,0 +1,164 @@
+2025-04-08T18:57:20.254341-0300 INFO Chamando função 'pipeline_calcular_kpi_vendas_consolidado' com args ('data', ['csv', 'parquet']) e kwargs {} log.py
+2025-04-08T18:57:20.254475-0300 INFO Chamando função 'extrair_dados_e_consolidar' com args ('data',) e kwargs {} log.py
+2025-04-08T18:57:20.254518-0300 ERROR Exceção capturada em 'extrair_dados_e_consolidar': ExtractDataframe.extrair_dados_e_consolidar() missing 1 required positional argument: 'pasta' log.py
+Traceback (most recent call last):
+
+  File "/Users/felipesimione/Documents/jornada_dados_projetos/primeiro_processamento_dados/aula08_bootcamp/pipeline.py", line 7, in <module>
+    pc.pipeline_calcular_kpi_vendas_consolidado(pasta_arqgumento, formato_de_saida)
+    │  │                                        │                 └ ['csv', 'parquet']
+    │  │                                        └ 'data'
+    │  └ <function PipelineCalculator.pipeline_calcular_kpi_vendas_consolidado at 0x104b59e40>
+    └ <class 'etl.PipelineCalculator'>
+
+  File "/Users/felipesimione/Documents/jornada_dados_projetos/primeiro_processamento_dados/aula08_bootcamp/log.py", line 27, in wrapper
+    result = func(*args, **kwargs)
+             │     │       └ {}
+             │     └ ('data', ['csv', 'parquet'])
+             └ <function PipelineCalculator.pipeline_calcular_kpi_vendas_consolidado at 0x104b59da0>
+
+  File "/Users/felipesimione/Documents/jornada_dados_projetos/primeiro_processamento_dados/aula08_bootcamp/etl.py", line 34, in pipeline_calcular_kpi_vendas_consolidado
+    data_frame = ExtractDataframe.extrair_dados_e_consolidar(pasta)
+                 │                │                          └ 'data'
+                 │                └ <function ExtractDataframe.extrair_dados_e_consolidar at 0x104b59c60>
+                 └ <class 'etl.ExtractDataframe'>
+
+> File "/Users/felipesimione/Documents/jornada_dados_projetos/primeiro_processamento_dados/aula08_bootcamp/log.py", line 27, in wrapper
+    result = func(*args, **kwargs)
+             │     │       └ {}
+             │     └ ('data',)
+             └ <function ExtractDataframe.extrair_dados_e_consolidar at 0x104740ae0>
+
+TypeError: ExtractDataframe.extrair_dados_e_consolidar() missing 1 required positional argument: 'pasta'
+2025-04-08T18:57:20.255356-0300 ERROR Exceção capturada em 'pipeline_calcular_kpi_vendas_consolidado': ExtractDataframe.extrair_dados_e_consolidar() missing 1 required positional argument: 'pasta' log.py
+Traceback (most recent call last):
+
+  File "/Users/felipesimione/Documents/jornada_dados_projetos/primeiro_processamento_dados/aula08_bootcamp/pipeline.py", line 7, in <module>
+    pc.pipeline_calcular_kpi_vendas_consolidado(pasta_arqgumento, formato_de_saida)
+    │  │                                        │                 └ ['csv', 'parquet']
+    │  │                                        └ 'data'
+    │  └ <function PipelineCalculator.pipeline_calcular_kpi_vendas_consolidado at 0x104b59e40>
+    └ <class 'etl.PipelineCalculator'>
+
+> File "/Users/felipesimione/Documents/jornada_dados_projetos/primeiro_processamento_dados/aula08_bootcamp/log.py", line 27, in wrapper
+    result = func(*args, **kwargs)
+             │     │       └ {}
+             │     └ ('data', ['csv', 'parquet'])
+             └ <function PipelineCalculator.pipeline_calcular_kpi_vendas_consolidado at 0x104b59da0>
+
+  File "/Users/felipesimione/Documents/jornada_dados_projetos/primeiro_processamento_dados/aula08_bootcamp/etl.py", line 34, in pipeline_calcular_kpi_vendas_consolidado
+    data_frame = ExtractDataframe.extrair_dados_e_consolidar(pasta)
+                 │                │                          └ 'data'
+                 │                └ <function ExtractDataframe.extrair_dados_e_consolidar at 0x104b59c60>
+                 └ <class 'etl.ExtractDataframe'>
+
+  File "/Users/felipesimione/Documents/jornada_dados_projetos/primeiro_processamento_dados/aula08_bootcamp/log.py", line 27, in wrapper
+    result = func(*args, **kwargs)
+             │     │       └ {}
+             │     └ ('data',)
+             └ <function ExtractDataframe.extrair_dados_e_consolidar at 0x104740ae0>
+
+TypeError: ExtractDataframe.extrair_dados_e_consolidar() missing 1 required positional argument: 'pasta'
+2025-04-08T18:59:10.056827-0300 INFO Chamando função 'pipeline_calcular_kpi_vendas_consolidado' com args ('data', ['csv', 'parquet']) e kwargs {} log.py
+2025-04-08T18:59:10.057055-0300 INFO Chamando função 'extrair_dados_e_consolidar' com args ('data',) e kwargs {} log.py
+2025-04-08T18:59:10.057107-0300 ERROR Exceção capturada em 'extrair_dados_e_consolidar': ExtractDataframe.extrair_dados_e_consolidar() missing 1 required positional argument: 'pasta' log.py
+Traceback (most recent call last):
+
+  File "/Users/felipesimione/Documents/jornada_dados_projetos/primeiro_processamento_dados/aula08_bootcamp/pipeline.py", line 7, in <module>
+    PipelineCalculator.pipeline_calcular_kpi_vendas_consolidado(pasta_argumento, formato_de_saida)
+    │                  │                                        │                └ ['csv', 'parquet']
+    │                  │                                        └ 'data'
+    │                  └ <function PipelineCalculator.pipeline_calcular_kpi_vendas_consolidado at 0x1051b5e40>
+    └ <class 'etl.PipelineCalculator'>
+
+  File "/Users/felipesimione/Documents/jornada_dados_projetos/primeiro_processamento_dados/aula08_bootcamp/log.py", line 27, in wrapper
+    result = func(*args, **kwargs)
+             │     │       └ {}
+             │     └ ('data', ['csv', 'parquet'])
+             └ <function PipelineCalculator.pipeline_calcular_kpi_vendas_consolidado at 0x1051b5da0>
+
+  File "/Users/felipesimione/Documents/jornada_dados_projetos/primeiro_processamento_dados/aula08_bootcamp/etl.py", line 34, in pipeline_calcular_kpi_vendas_consolidado
+    data_frame = ExtractDataframe.extrair_dados_e_consolidar(pasta)
+                 │                │                          └ 'data'
+                 │                └ <function ExtractDataframe.extrair_dados_e_consolidar at 0x1051b5c60>
+                 └ <class 'etl.ExtractDataframe'>
+
+> File "/Users/felipesimione/Documents/jornada_dados_projetos/primeiro_processamento_dados/aula08_bootcamp/log.py", line 27, in wrapper
+    result = func(*args, **kwargs)
+             │     │       └ {}
+             │     └ ('data',)
+             └ <function ExtractDataframe.extrair_dados_e_consolidar at 0x104d9cae0>
+
+TypeError: ExtractDataframe.extrair_dados_e_consolidar() missing 1 required positional argument: 'pasta'
+2025-04-08T18:59:10.057821-0300 ERROR Exceção capturada em 'pipeline_calcular_kpi_vendas_consolidado': ExtractDataframe.extrair_dados_e_consolidar() missing 1 required positional argument: 'pasta' log.py
+Traceback (most recent call last):
+
+  File "/Users/felipesimione/Documents/jornada_dados_projetos/primeiro_processamento_dados/aula08_bootcamp/pipeline.py", line 7, in <module>
+    PipelineCalculator.pipeline_calcular_kpi_vendas_consolidado(pasta_argumento, formato_de_saida)
+    │                  │                                        │                └ ['csv', 'parquet']
+    │                  │                                        └ 'data'
+    │                  └ <function PipelineCalculator.pipeline_calcular_kpi_vendas_consolidado at 0x1051b5e40>
+    └ <class 'etl.PipelineCalculator'>
+
+> File "/Users/felipesimione/Documents/jornada_dados_projetos/primeiro_processamento_dados/aula08_bootcamp/log.py", line 27, in wrapper
+    result = func(*args, **kwargs)
+             │     │       └ {}
+             │     └ ('data', ['csv', 'parquet'])
+             └ <function PipelineCalculator.pipeline_calcular_kpi_vendas_consolidado at 0x1051b5da0>
+
+  File "/Users/felipesimione/Documents/jornada_dados_projetos/primeiro_processamento_dados/aula08_bootcamp/etl.py", line 34, in pipeline_calcular_kpi_vendas_consolidado
+    data_frame = ExtractDataframe.extrair_dados_e_consolidar(pasta)
+                 │                │                          └ 'data'
+                 │                └ <function ExtractDataframe.extrair_dados_e_consolidar at 0x1051b5c60>
+                 └ <class 'etl.ExtractDataframe'>
+
+  File "/Users/felipesimione/Documents/jornada_dados_projetos/primeiro_processamento_dados/aula08_bootcamp/log.py", line 27, in wrapper
+    result = func(*args, **kwargs)
+             │     │       └ {}
+             │     └ ('data',)
+             └ <function ExtractDataframe.extrair_dados_e_consolidar at 0x104d9cae0>
+
+TypeError: ExtractDataframe.extrair_dados_e_consolidar() missing 1 required positional argument: 'pasta'
+2025-04-09T12:38:56.545349-0300 INFO Chamando função 'pipeline_calcular_kpi_vendas_consolidado' com args (<etl.PipelineCalculator object at 0x104e80ad0>, 'data', ['csv', 'parquet']) e kwargs {} log.py
+2025-04-09T12:38:56.545879-0300 ERROR Exceção capturada em 'pipeline_calcular_kpi_vendas_consolidado': PipelineCalculator.pipeline_calcular_kpi_vendas_consolidado() takes 2 positional arguments but 3 were given log.py
+Traceback (most recent call last):
+
+  File "/Users/felipesimione/Documents/jornada_dados_projetos/primeiro_processamento_dados/aula08_bootcamp/pipeline.py", line 9, in <module>
+    pipeline.pipeline_calcular_kpi_vendas_consolidado(pasta_argumento, formato_de_saida)
+    │        │                                        │                └ ['csv', 'parquet']
+    │        │                                        └ 'data'
+    │        └ <function PipelineCalculator.pipeline_calcular_kpi_vendas_consolidado at 0x11b7bdee0>
+    └ <etl.PipelineCalculator object at 0x104e80ad0>
+
+> File "/Users/felipesimione/Documents/jornada_dados_projetos/primeiro_processamento_dados/aula08_bootcamp/log.py", line 27, in wrapper
+    result = func(*args, **kwargs)
+             │     │       └ {}
+             │     └ (<etl.PipelineCalculator object at 0x104e80ad0>, 'data', ['csv', 'parquet'])
+             └ <function PipelineCalculator.pipeline_calcular_kpi_vendas_consolidado at 0x11b7bde40>
+
+TypeError: PipelineCalculator.pipeline_calcular_kpi_vendas_consolidado() takes 2 positional arguments but 3 were given
+2025-04-09T12:41:46.126287-0300 INFO Chamando função 'pipeline_calcular_kpi_vendas_consolidado' com args (<etl.PipelineCalculator object at 0x10446cad0>, 'data', ['csv', 'parquet']) e kwargs {} log.py
+2025-04-09T12:41:46.126630-0300 INFO Chamando função 'extrair_dados_e_consolidar' com args (<etl.ExtractDataframe object at 0x1084aaa50>, 'data') e kwargs {} log.py
+2025-04-09T12:41:46.138195-0300 INFO Função 'extrair_dados_e_consolidar' retornou             Produto    Categoria  Quantidade  Venda        Data
+0    Notebook Gamer  Eletrônicos           7   1500  2023-01-16
+1     Mouse Sem Fio  Eletrônicos          10     30  2023-01-16
+2  Teclado Mecânico  Eletrônicos           3    100  2023-01-16
+3    Notebook Gamer  Eletrônicos           2   1500  2023-01-17
+4     Mouse Sem Fio  Eletrônicos          14     30  2023-01-17
+5  Teclado Mecânico  Eletrônicos           2    100  2023-01-17
+6    Notebook Gamer  Eletrônicos           3   1500  2023-01-15
+7     Mouse Sem Fio  Eletrônicos          10     30  2023-01-15
+8  Teclado Mecânico  Eletrônicos           5    100  2023-01-15 log.py
+2025-04-09T12:41:46.139527-0300 INFO Chamando função 'calcular_kpi_total_vendas' com args (<etl.EtlCalculator object at 0x1084ab0e0>,) e kwargs {} log.py
+2025-04-09T12:41:46.141074-0300 INFO Função 'calcular_kpi_total_vendas' retornou             Produto    Categoria  Quantidade  Venda        Data  Total
+0    Notebook Gamer  Eletrônicos           7   1500  2023-01-16  10500
+1     Mouse Sem Fio  Eletrônicos          10     30  2023-01-16    300
+2  Teclado Mecânico  Eletrônicos           3    100  2023-01-16    300
+3    Notebook Gamer  Eletrônicos           2   1500  2023-01-17   3000
+4     Mouse Sem Fio  Eletrônicos          14     30  2023-01-17    420
+5  Teclado Mecânico  Eletrônicos           2    100  2023-01-17    200
+6    Notebook Gamer  Eletrônicos           3   1500  2023-01-15   4500
+7     Mouse Sem Fio  Eletrônicos          10     30  2023-01-15    300
+8  Teclado Mecânico  Eletrônicos           5    100  2023-01-15    500 log.py
+2025-04-09T12:41:46.141142-0300 INFO Chamando função 'carregar_dados' com args (<etl.EtlCalculator object at 0x1084ab0e0>, ['csv', 'parquet']) e kwargs {} log.py
+2025-04-09T12:41:46.271610-0300 INFO Função 'carregar_dados' retornou None log.py
+2025-04-09T12:41:46.271700-0300 INFO Função 'pipeline_calcular_kpi_vendas_consolidado' retornou None log.py

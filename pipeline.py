@@ -1,7 +1,9 @@
-from etl import pipeline_calcular_kpi_vendas_consolidado
+from etl import PipelineCalculator
 
 
-pasta_arqgumento: str = 'data'
+pasta_argumento: str = 'data'
 formato_de_saida: list = ['csv', 'parquet']
 
-pipeline_calcular_kpi_vendas_consolidado(pasta_arqgumento, formato_de_saida)
+
+pipeline = PipelineCalculator()
+pipeline.pipeline_calcular_kpi_vendas_consolidado(pasta_argumento, formato_de_saida)
